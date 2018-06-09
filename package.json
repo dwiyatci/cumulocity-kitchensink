@@ -1,0 +1,24 @@
+{
+  "name": "cumulocity-kitchensink",
+  "version": "1.0.0",
+  "description": "yet another kitchen sink-sink",
+  "main": "index.js",
+  "author": "glenn",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.8.1.tar.gz"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "rimraf": "2.6.2"
+  },
+  "scripts": {
+    "install:clean": "yarn upgrade || yarn install",
+    "update": "yarn upgrade-interactive --latest",
+    "start": "c8y server -k -t kitchensink -u",
+    "test": "echo \"Error: no test specified. bad dog.\" && exit 1"
+  }
+}

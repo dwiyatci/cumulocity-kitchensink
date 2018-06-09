@@ -1,0 +1,17 @@
+{
+  "name": "the sink",
+  "description": "the sink in the kitchen sink",
+  "category": "demo",
+  "ngModules": [
+    "c8y.kitchensink.theSink"
+  ],
+  "js": [
+    "the-sink.module.js",
+    "constants.js",
+    "data.service.js",
+    "the-sink.component.js"
+  ],
+  "css": [
+    "styles.css"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Pied Piper branding",
+  "description": "Cumulocity branding example",
+  "category": "branding",
+  "less": [
+    "index.less"
+  ],
+  "copy": [
+    "fonts",
+    "img"
+  ]
+}

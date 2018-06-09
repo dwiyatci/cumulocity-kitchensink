@@ -1,0 +1,29 @@
+{
+  "name": "kitchensink",
+  "options": {},
+  "deployOptions": {
+    "C8Y_BASE_TENANT_DEFAULT": "glenn",
+    "C8Y_BASE_USER_DEFAULT": "admin",
+    "C8Y_BASE_URL_DEFAULT": "https://glenn.cumulocity.com"
+  },
+  "replaceImports": {
+    "core/c8yBranding": "kitchensink/piedpiper-branding"
+  },
+  "applications": [
+    {
+      "contextPath": "administration"
+    },
+    {
+      "contextPath": "devicemanagement"
+    },
+    {
+      "contextPath": "cockpit",
+      "addImports": [
+        "kitchensink/the-sink"
+      ],
+      "removeImports": [
+        "core/welcomeScreen"
+      ]
+    }
+  ]
+}

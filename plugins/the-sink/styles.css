@@ -1,0 +1,17 @@
+.sink-item {
+  margin: .8em;
+  padding: 1.2em;
+}
+
+.example-chart {
+  border: red dashed 1px;
+  height: 250px;
+}
+
+.example-dashboard-gridstack {
+  border: blue dashed 1px;
+}
+
+.example-filtered-sorted-list {
+  border: green dashed 1px;
+}

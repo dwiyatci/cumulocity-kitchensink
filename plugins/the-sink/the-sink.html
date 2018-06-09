@@ -1,0 +1,44 @@
+<div class="the-sink">
+
+  <div class="sink-item example-chart">
+    <c8y-chart
+      datapoints="vm.chart.datapoints"
+      date-from="vm.chart.dateFrom"
+      date-to="vm.chart.dateTo"
+      aggregation="vm.chart.aggregation"
+      realtime="false"
+      show-time="false"
+      selectable="true"
+      on-update-dates="vm.chart.onUpdateDates($dateFrom, $dateTo)"
+      on-data-change="vm.chart.onDataChange(chart)"
+    >
+    </c8y-chart>
+  </div>
+
+  <div class="sink-item example-dashboard-gridstack">
+    <c8y-dashboard-gridstack
+      name="my-gridstack"
+      set-page-title="false"
+      is-frozen="false"
+      default-children="vm.dashboard.EXAMPLE_WIDGETS"
+      use-context="true"
+      set-global="true"
+    >
+    </c8y-dashboard-gridstack>
+  </div>
+
+  <div class="sink-item example-filtered-sorted-list">
+    <c8y-filtered-sorted-list
+      columns="vm.list.columns"
+      columns-config="vm.list.columnsConfig"
+      on-columns-config-changed="vm.list.onColumnsConfigChanged(columnsConfig)"
+      disable-columns-config="false"
+      items="vm.list.items"
+      on-item-click="vm.list.onItemClick(item)"
+      no-items-message="vm.list.noItemsMessage"
+      show-load-more="true"
+      on-load-more="vm.list.onLoadMore()"
+    >
+    </c8y-filtered-sorted-list>
+  </div>
+</div>

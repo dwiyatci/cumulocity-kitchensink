@@ -1,0 +1,124 @@
+/* ====================================
+    BRAND LOGOS
+   ==================================== */
+  // Logo for login and loading
+  // this logo is required!
+
+  @brand-logo-img: 'logo-main.svg';
+  @brand-logo-height: 80%; // percentage - height / width * 100
+  // ---
+
+  // when set replaces the app icon in navigator.
+  // should be 230px wide.
+  @appLogo:  "@{image-path}logo-nav.svg";
+  @appLogo-height: 56%; // percentage - height / width * 100
+
+
+  // when set adds an image below login form.
+  //As an example, check Trakerando branding
+  @powered-by: "";
+
+
+
+/* ====================================
+    COLORS
+   ==================================== */
+  @brand-color:                 #53cd61; // main color - replace with your brand color
+
+  @brand-primary:               @brand-color;
+  @brand-complementary:         #a8b3b5;
+  @brand-primary-light:         lighten(@brand-primary, 20%);
+
+  // status colors
+  @brand-success:               #5cb85c;
+  @brand-info:                  #5bc0de;
+  @brand-warning:               #f0ad4e;
+  @brand-danger:                #d9534f;
+  @danger:                      #D90000;
+  @warning:                     #FDC000;
+  @dark-warning:                #FF8000;
+  @success:                     #5cb85c;
+
+  // grays
+  @gray-text:                   #444;
+  @gray-darker:                 #2c3637;
+  @gray-dark:                   #3b4748;
+  @gray-medium-dark:            #49595B;
+  @gray-medium:                 #6D7A7C;
+  @gray:                        #8A9596;
+  @gray-light:                  #cacece;
+  @gray-lighter:                #f8f8f8;
+  @gray-white:                  #fcfcfc;
+  @text-muted:                  @gray;
+
+
+  // page background color - always use a light background
+  @body-background-color:       #f8f8f8;
+
+
+
+
+/* ====================================
+    HEADER BAR
+   ==================================== */
+
+  @headerColor:                 white;
+  @header-text-color:           @gray-medium-dark;
+  @header-text-color-hover:     @brand-primary;
+  @header-active-color:         darken(@gray-medium-dark, 15%);
+
+
+
+/* ====================================
+    NAVIGATOR
+   ==================================== */
+  @navColor:                   @gray-darker;
+  @navColorHeader:             transparent;
+  @navigator-title-color:      white;
+  @navigator-text-color:       @gray-lighter;
+  @navigator-separator-color:  fade(white, 5%);
+  @navigator-font-family:      @headings-font-family;
+  @navigator-font-size:        13px;
+  @navigator-active-color:     white;
+  @navigator-active-bg:        @brand-primary;
+
+  // when set adds a vertical gradient in the navigator background
+  @grad-top:                     "";
+  @grad-bottom:                  "";
+
+
+/* ====================================
+    TYPOGRAPHY
+   ==================================== */
+  // if you're loading fonts from a local directory
+  @import "fonts.less";
+
+  // you can use google fonts or any other remote provider
+  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+  @font-family-sans-serif:       "Lato",Arial, Verdana, sans-serif;
+  @font-family-base:             @font-family-sans-serif;
+  @headings-font-family:         "Roboto",Arial, Verdana, sans-serif;
+
+
+
+/* ====================================
+    BUTTONS
+   ==================================== */
+  @btn-border-radius-base:       2px;
+  @btn-border-radius-large:      @btn-border-radius-base;
+  @btn-border-radius-small:      @btn-border-radius-base;
+  @btn-shadow: none;
+
+
+
+/* ====================================
+    COMPONENTS
+   ==================================== */
+  @spinner-color:               lighten(@brand-primary, 30%);
+  @link-color:                  #337ab7;
+  @link-hover-color:            darken(@link-color, 15%);
+  @input-focus-color:           #66afe9;
+
+
+  @import "overrides.less";
