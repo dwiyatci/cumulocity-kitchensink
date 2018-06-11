@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dt/cumulocity-kitchensink.svg)](http://npm-stat.com/charts.html?package=cumulocity-kitchensink)
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/dwiyatci/cumulocity-kitchensink/master/LICENSE.txt)
 
-A "kitchen sink" container app for showcasing the usage of some "advanced" Cumulocity UI services and components, as well as revealing the mechanics to extend/adapt the default applications.
+A "kitchen sink" container app for showcasing the usage of some rather "advanced" Cumulocity UI services and components, as well as revealing the mechanics to extend/adapt the default applications.
 
 ![Screenshot](screenshot.png)
 
