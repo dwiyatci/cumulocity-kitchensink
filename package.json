@@ -2,9 +2,26 @@
   "name": "cumulocity-kitchensink",
   "version": "1.0.0",
   "description": "yet another c8y ui kitchen sink-sink",
-  "main": "index.js",
-  "author": "glenn (https://tiny.cc/dwiyatci)",
+  "keywords": [
+    "cumulocity",
+    "iot",
+    "industry 4.0",
+    "examples",
+    "demo",
+    "showcase",
+    "cumulocity ui extended default app",
+    "wiederhole dich nicht",
+    "i want to break free",
+    "i'd give you everything i've got for a little peace of mind"
+  ],
+  "homepage": "https://github.com/dwiyatci/cumulocity-kitchensink",
+  "bugs": "https://github.com/dwiyatci/cumulocity-kitchensink/issues",
   "license": "MIT",
+  "author": "glenn (https://tiny.cc/dwiyatci)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwiyatci/cumulocity-kitchensink.git"
+  },
   "dependencies": {
     "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.8.2.tar.gz"
   },
