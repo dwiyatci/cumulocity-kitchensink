@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-kitchensink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "yet another c8y ui kitchen sink-sink",
   "keywords": [
     "cumulocity",
