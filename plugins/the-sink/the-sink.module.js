@@ -2,18 +2,13 @@
  * Created by glenn on 12.01.18.
  */
 
-(function () {
+(() => {
   'use strict';
 
-  angular
-    .module('c8y.kitchensink.theSink', [])
-    .config(configure);
+  angular.module('c8y.kitchensink.theSink', []).config(configure);
 
   /* @ngInject */
-  function configure(
-    c8yNavigatorProvider,
-    c8yViewsProvider
-  ) {
+  function configure(c8yNavigatorProvider, c8yViewsProvider) {
     c8yNavigatorProvider.addNavigation({
       path: 'kitchensink',
       name: 'Kitchen sink',
@@ -25,4 +20,4 @@
       template: '<c8y-the-sink></c8y-the-sink>'
     });
   }
-}());
+})();

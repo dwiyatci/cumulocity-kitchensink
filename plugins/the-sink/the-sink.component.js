@@ -2,17 +2,15 @@
  * Created by glenn on 12.01.18.
  */
 
-(function () {
+(() => {
   'use strict';
 
-  angular
-    .module('c8y.kitchensink.theSink')
-    .component('c8yTheSink', {
-      templateUrl: ':::PLUGIN_PATH:::/the-sink.html',
-      bindings: {},
-      controllerAs: 'vm',
-      controller: Controller
-    });
+  angular.module('c8y.kitchensink.theSink').component('c8yTheSink', {
+    templateUrl: ':::PLUGIN_PATH:::/the-sink.html',
+    bindings: {},
+    controllerAs: 'vm',
+    controller: Controller
+  });
 
   /* @ngInject */
   function Controller(
@@ -22,10 +20,7 @@
     theSinkConstants,
     theSinkDataService
   ) {
-    const {
-      EXAMPLE_DATAPOINTS,
-      EXAMPLE_WIDGETS
-    } = theSinkConstants;
+    const { EXAMPLE_DATAPOINTS, EXAMPLE_WIDGETS } = theSinkConstants;
     const vm = this;
 
     _.assign(vm, {
@@ -36,10 +31,10 @@
         dateTo: moment('2018-06-10').format(),
         aggregation: 'HOURLY', // possible values are: 'NONE', 'MINUTELY, 'HOURLY', 'DAILY'
         onUpdateDates(dateFrom, dateTo) {
-          // console.log(dateFrom, dateTo);
+          console.log(dateFrom, dateTo);
         },
         onDataChange(chart) {
-          // console.log(chart);
+          console.log(chart);
         }
       },
       dashboard: {
@@ -49,11 +44,11 @@
         columns: [],
         columnsConfig: [],
         onColumnsConfigChanged(columnsConfig) {
-          // console.log(columnsConfig);
+          console.log(columnsConfig);
         },
         items: [],
         onItemClick(item) {
-          // console.log(item);
+          console.log(item);
         },
         noItemsMessage: 'No devices to display.',
         onLoadMore() {
@@ -63,13 +58,13 @@
     });
 
     async function $onInit() {
-      const { device, datapoints } = await $q.all({
-        device: theSinkDataService.getFirstDeviceInTheList(),
+      const { someDevice, datapoints } = await $q.all({
+        someDevice: theSinkDataService.getFirstDeviceInTheList(),
         datapoints: theSinkDataService.getThreeDatapointsForFirstDevice()
       });
 
-      // console.log(device);
-      // console.log(datapoints);
+      console.log(someDevice);
+      console.log(datapoints);
 
       const { columns, columnsConfig } = await $q.all({
         columns: theSinkDataService.getDeviceColumns(),
@@ -77,9 +72,12 @@
       });
 
       console.dir(columns);
-      // console.log(columnsConfig);
+      console.log(columnsConfig);
 
-      const devices = await theSinkDataService.getDevicesFor({ columns, columnsConfig });
+      const devices = await theSinkDataService.getDevicesFor({
+        columns,
+        columnsConfig
+      });
 
       // console.log(devices);
 
@@ -97,4 +95,4 @@
       $rootScope.$apply();
     }
   }
-}());
+})();

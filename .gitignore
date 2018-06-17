@@ -1,6 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 
+.idea
+.eslintcache
+
 node_modules
 build
 
-.idea
+**/.tmp

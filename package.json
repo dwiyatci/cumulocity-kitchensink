@@ -1,24 +1,31 @@
 {
   "name": "cumulocity-kitchensink",
   "version": "1.0.0",
-  "description": "yet another kitchen sink-sink",
+  "description": "yet another c8y ui kitchen sink-sink",
   "main": "index.js",
-  "author": "glenn",
+  "author": "glenn (https://tiny.cc/dwiyatci)",
   "license": "MIT",
-  "private": true,
   "dependencies": {
-    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.8.1.tar.gz"
+    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.8.2.tar.gz"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.12.0",
+    "prettier": "1.13.5",
     "rimraf": "2.6.2"
   },
   "scripts": {
     "install:clean": "yarn upgrade || yarn install",
     "update": "yarn upgrade-interactive --latest",
     "start": "c8y server -k -t kitchensink -u",
-    "test": "echo \"Error: no test specified. bad dog.\" && exit 1"
+    "start:glenn": "c8y server -k -t kitchensink -u https://glenn.cumulocity.com",
+    "test": "echo \"Error: no test specified. bad dog.\" && exit 1",
+    "lint": "eslint --cache",
+    "prettier": "prettier --write"
   }
 }

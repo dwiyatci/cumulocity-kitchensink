@@ -2,7 +2,7 @@
  * Created by glenn on 12.01.18.
  */
 
-(function () {
+(() => {
   'use strict';
 
   angular
@@ -58,9 +58,12 @@
     }
 
     async function getDevicesFor({ columns, columnsConfig }) {
-      const query = c8yFilteringSortingInventoryQueries.getQuery(columns, columnsConfig);
+      const query = c8yFilteringSortingInventoryQueries.getQuery(
+        columns,
+        columnsConfig
+      );
 
       return c8yDevices.listQuery(query, { withGroups: true });
     }
   }
-}());
+})();

@@ -1,0 +1,65 @@
+---
+env:
+  browser: true
+  node: true
+  jquery: true
+  jasmine: true
+  jest: true
+  protractor: true
+globals:
+  _: false
+  angular: false
+  d3: false
+  L: false
+  moment: false
+  module: false
+  inject: false
+  sinon: false
+  tentacle: false
+  async: true
+  common: true
+extends:
+  - airbnb-base
+  - prettier
+parserOptions:
+  sourceType: script
+rules:
+  semi:
+  - error
+  spaced-comment:
+  - error
+  - always
+  - line:
+      exceptions:
+      - /
+    markers:
+    - "//////////"
+  valid-jsdoc:
+  - error
+  - requireReturn: false
+  no-use-before-define:
+  - error
+  - functions: false
+  no-param-reassign:
+  - error
+  - props: false
+  strict:
+  - error
+  - function
+  prefer-destructuring:
+  - error
+  - VariableDeclarator:
+      array: true
+      object: true
+    AssignmentExpression:
+      array: false
+      object: false
+  - enforceForRenamedProperties: false
+  no-underscore-dangle: off
+  object-curly-newline: off
+  object-property-newline: off
+  function-paren-newline: off
+  import/no-extraneous-dependencies:
+  - error
+  - peerDependencies: true
+

@@ -23,7 +23,10 @@
       ],
       "removeImports": [
         "core/welcomeScreen"
-      ]
+      ],
+      "options": {
+        "contentSecurityPolicy": null
+      }
     }
   ]
 }

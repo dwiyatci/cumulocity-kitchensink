@@ -12,9 +12,11 @@ A "kitchen sink" container app for showcasing the usage of some rather "advanced
 Make less effort to answer repeated questions. Care less about that "pebbles and sands" bombardment. Come to the office later, go home sooner. Travel places, give more meaning to life, fill my obituary with the values that truly matter.
 
 ## Installation
-- Make sure you have Node.js ≥ v8.9.0 installed and npm from its [website](https://nodejs.org), or better even, use [nvm](https://github.com/creationix/nvm).
+- Make sure you have Node.js LTS installed and npm from its [website](https://nodejs.org), or better even, use [nvm](https://github.com/creationix/nvm).
 
 - Install [yarn](https://yarnpkg.com/en/docs/install).
+
+- Install [cumulocity-tools](https://www.npmjs.com/package/cumulocity-tools).
 
 - Clone the repo, `cd` to your project directory.
 
@@ -34,7 +36,7 @@ $ yarn install:clean
 - In the [target file](targets/kitchensink.json), plugins can be added, removed, or replaced from the default applications (i.e. Administration, Device management, and Cockpit) by using `addImports`, `removeImports`, and `replaceImports` respectively.
 
 - Start your development server by using either of the two following commands:
-  - `c8y server -u <your_tenant_url> -k -t kitchensink`.
+  - `c8y server -k -t kitchensink -u <your_tenant_url>`.
   - `yarn start <your_tenant_url>`.
 
 ## Build
@@ -45,7 +47,7 @@ $ c8y build:target kitchensink
 ## Unit testing
 Not provided. **BAD** dog. 📛🐶
 ```bash
-$ npm t
+$ yarn test
 ```
 
 ## Author
