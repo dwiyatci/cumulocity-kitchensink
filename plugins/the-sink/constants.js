@@ -20,7 +20,17 @@
         _width: 8,
         _height: 4,
         config: {}
-      }
+      },
+      {
+        name: 'Html widget',
+        title: 'HTML widget',
+        _width: 12,
+        _height: 4,
+        config: {
+          html: '<div><marquee><h3>sphinx of black quartz, judge my vow.</h3></marquee></div>',
+          unsafe: true
+        }
+      },
       // any other built-in or custom widgets...
     ],
     EXAMPLE_DATAPOINTS: [

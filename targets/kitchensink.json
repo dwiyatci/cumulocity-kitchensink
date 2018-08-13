@@ -19,7 +19,8 @@
     {
       "contextPath": "cockpit",
       "addImports": [
-        "kitchensink/the-sink"
+        "kitchensink/the-sink",
+        "core/htmlWidget"
       ],
       "removeImports": [
         "core/welcomeScreen"
