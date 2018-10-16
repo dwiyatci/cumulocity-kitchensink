@@ -1,6 +1,8 @@
 {
   "name": "kitchensink",
-  "options": {},
+  "options": {
+    "contentSecurityPolicy": "default-src 'self' 'unsafe-inline' http: https: ws: wss:; script-src 'self' *.mapquestapi.com *.twitter.com *.twimg.com 'unsafe-inline' 'unsafe-eval' data:; style-src * 'unsafe-inline' blob:; img-src * data:; font-src * data:; frame-src *;"
+  },
   "deployOptions": {
     "C8Y_BASE_TENANT_DEFAULT": "glenn",
     "C8Y_BASE_USER_DEFAULT": "admin",
@@ -19,8 +21,7 @@
     {
       "contextPath": "cockpit",
       "addImports": [
-        "kitchensink/the-sink",
-        "core/htmlWidget"
+        "kitchensink/the-sink"
       ],
       "removeImports": [
         "core/welcomeScreen"
