@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dt/cumulocity-kitchensink.svg)](http://npm-stat.com/charts.html?package=cumulocity-kitchensink)
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/dwiyatci/cumulocity-kitchensink/master/LICENSE.txt)
 
-A "kitchen sink" container app for showcasing the usage of some rather "advanced" Cumulocity UI services and components, as well as revealing the mechanics to extend/adapt the default applications.
+A Cumulocity "kitchen sink" container app for showcasing the usage of some rather "advanced" Cumulocity UI services and components, as well as revealing the mechanics to extend/adapt the default applications.
 
 ![Screenshot](screenshot.png)
 
@@ -38,6 +38,8 @@ $ yarn install:clean
 - Start your development server by using either of the two following commands:
   - `c8y server -k -t kitchensink -u <your_tenant_url>`.
   - `yarn start <your_tenant_url>`.
+  
+- Find the running kitchen sink (extended Cockpit) app at: https://localhost:9000/apps/cockpit/#/kitchensink.
 
 ## Build
 ```bash
@@ -45,7 +47,7 @@ $ c8y build:target kitchensink
 ```
 
 ## Unit testing
-Not provided. **BAD** dog. 📛🐶
+Not provided. **BAD** dog. 🐶📛
 ```bash
 $ yarn test
 ```

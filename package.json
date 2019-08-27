@@ -23,26 +23,26 @@
     "url": "https://github.com/dwiyatci/cumulocity-kitchensink.git"
   },
   "dependencies": {
-    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.15.1.tar.gz"
+    "cumulocity-ui-build": "http://resources.cumulocity.com/webapps/ui/9.20.20.tar.gz"
   },
   "devDependencies": {
-    "@babel/core": "7.1.2",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
-    "@babel/preset-env": "7.1.0",
-    "eslint": "5.7.0",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-import": "2.14.0",
-    "prettier": "1.14.3",
-    "rimraf": "2.6.2"
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "eslint": "6.2.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "prettier": "1.18.2",
+    "rimraf": "3.0.0"
   },
   "scripts": {
     "install:clean": "yarn upgrade || yarn install",
     "update": "yarn upgrade-interactive --latest",
+    "start:glenn": "yarn start https://glenn.cumulocity.com",
     "start": "c8y server -k -t kitchensink -u",
-    "start:glenn": "c8y server -k -t kitchensink -u https://glenn.cumulocity.com",
     "test": "echo \"Error: no test specified. bad dog.\" && exit 1",
-    "lint": "eslint --cache",
+    "lint": "eslint --cache .",
     "prettier": "prettier --write"
   }
 }
